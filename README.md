@@ -24,6 +24,10 @@ docker exec -it container_id bash
 >> apt install psmisc #to be able to see the difference bet before and after 
 >> exit
 
+kubectl config get-contexts
+kubectl config use-context kind-my_cluster
+
+
 #repo update and add for the prometheus app 
 
 helm repo add any_repo_name https://prometheus-community.github.io/helm-charts
